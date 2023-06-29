@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/react'
 import { GetServerSideProps } from 'next';
-import { FiGithub, FiLock, FiUser } from 'react-icons/fi';
+import { FiGithub} from 'react-icons/fi';
 import { FaDiscord } from 'react-icons/fa';
 import { getSession, signIn } from 'next-auth/react';
 
@@ -25,6 +25,7 @@ function Login() {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
+ console.log(context)
  const session = await getSession(context);
 
  console.log(session)

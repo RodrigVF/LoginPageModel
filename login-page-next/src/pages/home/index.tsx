@@ -12,7 +12,7 @@ function Home() {
       flexDirection="column"
       alignItems="center"
       justifyContent="center">
-      <Text color="gray.400" fontSize="md">Welcome abord</Text>
+      <Text color="gray.400" fontSize="md">Bem vindo(a)!</Text>
       <Flex marginTop="1rem" alignItems="center">
       {session?.user?.image && (
       <Image

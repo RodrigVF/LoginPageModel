@@ -14,4 +14,9 @@ export default NextAuth({
  })
  ],
  secret: process.env.SECRET,
+ callbacks: {
+  session({ session, token, user }) {
+    return session
+  },
+},
 })
