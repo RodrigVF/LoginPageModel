@@ -10,7 +10,8 @@ export default NextAuth({
   }),
   DiscordProvider({
    clientId: process.env.DISCORD_CLIENT_ID,
-   clientSecret: process.env.DISCORD_CLIENT_SECRET
+   clientSecret: process.env.DISCORD_CLIENT_SECRET,
+   authorization: "https://discord.com/api/oauth2/authorize?scope=identify+email+guilds",
  })
  ],
  secret: process.env.SECRET,
